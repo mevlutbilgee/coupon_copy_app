@@ -1,7 +1,8 @@
 function copyText() {
-  const copy_text = document.getElementById("copy_text");
-  copy_text.innerHTML = `Copied !`;
-  const text = "Dopigo20"; // Kopyalanacak metni burada belirleyin
+  const copyText = document.getElementById("copyText");
+  const couponText = document.getElementById("couponText");
+  couponText.innerHTML = `KOPYALANDI !`;
+  const text = "HOSGELDIN10"; // Kopyalanacak metni burada belirleyin
   navigator.clipboard
     .writeText(text)
     .then(() => {
